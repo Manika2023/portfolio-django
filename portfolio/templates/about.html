@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block aboutactive %} active {% endblock aboutactive %}
+{% block title %} about{% endblock title %}
+        {% block body %}
+
+        <div class="container my-3">
+          <h2 class="text-center my-3 py-3">about me</h2>
+          <div class="row">
+           <div class="col-md-4">
+           <div class="card" style="width: 18rem;">
+             <img src="{% static 'img/about1.jpeg' %}" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">designer</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="#" class="btn btn-primary">Go somewhere</a>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="card" style="width: 18rem;">
+             <img src="{% static 'img/about2.jpeg' %}" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">developer</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="#" class="btn btn-primary">Go somewhere</a>
+             </div>
+           </div>
+         </div>
+           <div class="col-md-4">
+           <div class="card" style="width: 18rem;">
+             <img src="{% static 'img/about3.jpeg' %}" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">entertainer</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="#" class="btn btn-primary">Go somewhere</a>
+             </div>
+           </div>
+          </div>
+         </div>
+     </div>
+       
+     <div class="container">
+      <h1>my coding video</h1>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/D7JFOq3mvy0" allowfullscreen></iframe>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit sunt dolorem!</p>
+     </div>
+             
+{% endblock body %}
